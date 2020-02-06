@@ -3,3 +3,6 @@
 
 # Personal hold fund & shares
 hold_config.json
+
+# internal files
+Runner/test.py
