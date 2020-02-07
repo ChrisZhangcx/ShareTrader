@@ -2,7 +2,7 @@ from abc import abstractmethod, ABCMeta
 
 import sys
 sys.path.append('..')
-from Structures.Signal import TradeSignal
+from Structures.Constants import TradeSignal
 
 
 class IStrategy(object, metaclass=ABCMeta):
@@ -15,4 +15,4 @@ class IStrategy(object, metaclass=ABCMeta):
         pass
 
     def __repr__(self):
-        print(f"当前使用的策略：{self.name}")
+        return "当前使用的策略：{}".format(self.name)

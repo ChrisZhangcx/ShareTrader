@@ -5,3 +5,9 @@ class TradeSignal(IntEnum):
     hold = 0
     buy = 1
     sell = 2
+
+
+class AssetType(IntEnum):
+    Share = 0
+    Futures = 1
+    Fund = 2

@@ -6,3 +6,7 @@ hold_config.json
 
 # internal files
 Runner/test.py
+Strategies/TestStrategy.py
+
+# cache
+Structures/__pychche__/*
