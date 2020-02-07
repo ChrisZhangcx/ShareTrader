@@ -1,7 +1,8 @@
 # 用于请求数据的接口
+from abc import abstractclassmethod, ABCMeta
 
 
-class IRequestor(object):
+class IRequestor(object, metaclass=ABCMeta):
     def __init__(self, pro, name: str):
         # pro: tushare的api接口
         # name: 当前请求工具的名称
