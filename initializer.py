@@ -30,6 +30,9 @@ def main():
     if not os.path.exists("hold_config.json"):
         print("----- 警告：没有找到持仓配置文件，请确保根目录下存在名为'hold_config.json'的配置文件。 -----")
 
+    # 初始化日志文件夹
+    os.makedirs("../AssetLogger", exist_ok=True)
+
 
 if __name__ == '__main__':
     main()
