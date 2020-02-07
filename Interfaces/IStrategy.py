@@ -13,3 +13,6 @@ class IStrategy(object, metaclass=ABCMeta):
     @abstractmethod
     def get_trade_signal(self, **kwargs) -> TradeSignal:
         pass
+
+    def __repr__(self):
+        print(f"当前使用的策略：{self.name}")

@@ -14,7 +14,3 @@ class IRequestor(object, metaclass=ABCMeta):
 
     def get_pro(self):
         return self._pro
-
-
-if __name__ == '__main__':
-    pass
