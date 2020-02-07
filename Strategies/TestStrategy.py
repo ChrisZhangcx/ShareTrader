@@ -9,7 +9,12 @@ class TestStrategy(IStrategy):
     def __init__(self):
         super(TestStrategy, self).__init__("test strategy")
 
-    def get_trade_signal(self, **kwargs) -> TradeSignal:
+    @staticmethod
+    def get_trade_signal(**kwargs) -> TradeSignal:
+        # 应当根据具体情况来返回不同的信号，且该函数中不进行输出
+        print("Test Strategy接收到一次返回信号请求。")
+        print("传入数据为：")
+        print(kwargs)
         return TradeSignal.hold
 
     def __repr__(self):

@@ -1,15 +1,13 @@
-from abc import abstractmethod, ABCMeta
-
 import sys
 sys.path.append('..')
 from Utilities.Constants import TradeSignal
 
 
-class IStrategy(object, metaclass=ABCMeta):
+class IStrategy(object):
 
     def __init__(self, strategy_name: str):
         self.name = strategy_name
 
-    @abstractmethod
+    @staticmethod
     def get_trade_signal(self, **kwargs) -> TradeSignal:
         pass
