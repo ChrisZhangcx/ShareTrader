@@ -2,7 +2,7 @@ from abc import abstractmethod, ABCMeta
 
 import sys
 sys.path.append('..')
-from Structures.Constants import TradeSignal
+from Utilities.Constants import TradeSignal
 
 
 class IStrategy(object, metaclass=ABCMeta):

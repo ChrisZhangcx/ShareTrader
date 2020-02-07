@@ -1,7 +1,7 @@
 import sys
 sys.path.append('..')
 from Interfaces.IStrategy import IStrategy
-from Structures.Constants import TradeSignal
+from Utilities.Constants import TradeSignal
 
 
 class TestStrategy(IStrategy):

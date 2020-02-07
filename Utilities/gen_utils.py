@@ -4,7 +4,7 @@ import pickle
 import sys
 sys.path.append('..')
 from Strategies.TestStrategy import TestStrategy
-from Structures.Constants import AssetType
+from Utilities.Constants import AssetType
 from Structures.ExecutionUnit import ExecutionUnit, Asset
 
 

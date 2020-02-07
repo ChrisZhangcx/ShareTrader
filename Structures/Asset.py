@@ -1,7 +1,7 @@
 # 资产的基本单元，保存资产通用的基本信息，如：TS代码，资产名称，额外信息等
 import sys
 sys.path.append('..')
-from Structures.Constants import AssetType
+from Utilities.Constants import AssetType
 
 
 class Asset(object):
