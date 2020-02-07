@@ -10,3 +10,9 @@ class ExecutionUnit(object):
         self.asset = asset
         self.strategy = strategy
         self.update_interval = update_interval
+
+    def __repr__(self):
+        return "---------- 执行单元信息 ----------\n" + \
+               self.asset.__repr__() + \
+               "\n" + self.strategy.__repr__(self.strategy) + \
+               "\n----- 更新间隔：{} 分钟 -----".format(self.update_interval)

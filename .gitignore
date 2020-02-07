@@ -3,10 +3,10 @@
 
 # Personal hold fund & shares
 hold_config.json
+AssetLogger/*
 
 # internal files
 Runner/test.py
-Strategies/TestStrategy.py
 
 # cache
 Structures/__pychche__/*

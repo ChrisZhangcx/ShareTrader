@@ -14,4 +14,4 @@ class Asset(object):
     def __repr__(self):
         return "----- 资产信息 -----\n" + \
                "资产名称：{}；所属类型：{}".format(self.name, self.type) + \
-               ("\n备注：{}".format(self.remark) if self.remark is not None else "")
+               ("。备注：{}".format(self.remark) if self.remark is not None else "")
