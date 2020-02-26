@@ -20,6 +20,9 @@ class MacdStrategy(BaseStrategy):
         self.fast_period = fast_period
         self.slow_period = slow_period
 
+    def _get_stock_signal(self, ts_code: str, **kwargs) -> TradeSignal:
+        return TradeSignal.hold
+
     def _get_fund_signal(self, ts_code: str, **kwargs) -> TradeSignal:
         # 获取收盘价数据
         pro = ts.pro_api()
@@ -41,3 +44,9 @@ class MacdStrategy(BaseStrategy):
             return
         self.fast_period = fast_period
         self.slow_period = slow_period
+
+
+# 测试MACD接口的使用
+if __name__ == '__main__':
+
+    pass

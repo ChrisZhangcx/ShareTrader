@@ -10,7 +10,7 @@ from Structures.ExecutionUnit import ExecutionUnit, Asset
 
 # 根据传入的指定策略名称，返回给定的策略
 def choose_strategy(strategy_name: str):
-    if strategy_name == "macd":
+    if strategy_name.lower() == "macd":
         return MacdStrategy()
     else:
         raise NotImplementedError("所选策略尚未实现！")
@@ -18,7 +18,7 @@ def choose_strategy(strategy_name: str):
 
 def choose_asset_type(asset_type: int) -> AssetType:
     if asset_type == 1:
-        return AssetType.Share
+        return AssetType.Stock
     elif asset_type == 2:
         return AssetType.Futures
     elif asset_type == 3:

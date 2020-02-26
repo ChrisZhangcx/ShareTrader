@@ -11,7 +11,15 @@ class Asset(object):
         self.type = asset_type
         self.remark = remark
 
+    def _get_asset_type(self) -> str:
+        if self.type == AssetType.Stock:
+            return "股票"
+        elif self.type == AssetType.Fund:
+            return "基金"
+        elif self.type == AssetType.FuTures:
+            return "期货"
+
     def __repr__(self):
         return "----- 资产信息 -----\n" + \
-               "资产名称：{}；所属类型：{}".format(self.name, self.type) + \
-               ("。备注：{}".format(self.remark) if self.remark is not None else "")
+               "资产名称：{}\n所属类型：{}\n".format(self.name, self._get_asset_type()) + \
+               ("备注：{}".format(self.remark) if self.remark is not None else "无")
