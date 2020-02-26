@@ -3,15 +3,15 @@ import pickle
 
 import sys
 sys.path.append('..')
-from Strategies.TestStrategy import TestStrategy
+from Strategies.MacdStrategy import MacdStrategy
 from Utilities.Constants import AssetType
 from Structures.ExecutionUnit import ExecutionUnit, Asset
 
 
 # 根据传入的指定策略名称，返回给定的策略
 def choose_strategy(strategy_name: str):
-    if strategy_name == "debug":
-        return TestStrategy
+    if strategy_name == "macd":
+        return MacdStrategy()
     else:
         raise NotImplementedError("所选策略尚未实现！")
 

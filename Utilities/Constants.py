@@ -8,6 +8,6 @@ class TradeSignal(IntEnum):
 
 
 class AssetType(IntEnum):
-    Share = 0
+    Stock = 0
     Futures = 1
     Fund = 2

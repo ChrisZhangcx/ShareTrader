@@ -9,4 +9,5 @@ AssetLogger/*
 Runner/test.py
 
 # cache
-Structures/__pychche__/*
+__pycache__/*
+*/__pycache__/*
